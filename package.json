@@ -1,0 +1,16 @@
+{
+  "name": "jackcompiler",
+  "version": "1.0.0",
+  "description": "Jack Compiler -- The Elements of Computer Systems",
+  "main": "jackCompiler.js",
+  "scripts": {
+    "test": "clear; mocha --require ts-node/register test/**/*.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
