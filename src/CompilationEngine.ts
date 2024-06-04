@@ -53,7 +53,7 @@ export class CompilationEngine {
   }
 
   /*
-   * Aids at asserting whether the next token complies with the expected program
+   * Asserts whether the next token complies with the expected program
    * structure.
    */
   private peek(type: string, possible: string[] = []): boolean {

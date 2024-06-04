@@ -15,9 +15,9 @@ export class Tokenizer {
   private tokensRe = new RegExp(`(${this.keywordRe})|(${this.identifierRe})|(${this.symbolRe})|(${this.int_constRe})|(${this.string_constRe})`, 'g');
 
   /*
-   * Rudimentary comment stripping functions.  For serious handling of comments we
-   * need a full-blown parser.  Two-tier: First pass removes inline comments,
-   * then multi-line and API-style comments.
+   * Rudimentary comment stripping functions.  For serious handling of comments 
+   * you need a full-blown parser.  Two-pass style: First pass removes inline 
+   * comments, then multi-line and API-style comments.
    */
   private stripInlineComments(lines: string[]): string[] {
     const inlineRe = /\/\/.*|\/\*[\s\S]*?\*\//g;
