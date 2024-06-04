@@ -102,6 +102,10 @@ export class Tokenizer {
 		}
 	}
 
+  get token(): Token {
+    return this.tokens[0];
+  }
+
   public hasMoreTokens(): boolean {
     return this.tokens.length !== 0;
   }

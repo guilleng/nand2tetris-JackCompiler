@@ -1,4 +1,4 @@
-import { Tokenizer } from '../src/JackTokenizer';
+import { Tokenizer, Token } from '../src/JackTokenizer';
 import { symbolToEntity } from '../src/Utils';
 
 const Tab = '  ';
